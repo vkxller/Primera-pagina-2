@@ -50,14 +50,28 @@ a[href="#"] {
 
 /* Efecto hover para los enlaces de navegación */
 a[href="#"]:hover {
-    color: #a5a5a5; /* Cambia a amarillo al pasar el mouse */
+    color: #a5a5a5;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* Efecto de brillo */
     transform: translateY(-2px); /* Ligero movimiento hacia arriba */
 }
 
 .boton{
-    font-size: 25px;
-    height: 50px;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    top: 40px;
+    left: -940px;
+
+}
+.botton{
+    width: 100px;
+    height: 40px;
+}
+
+.boton:hover{
+    color: #0753a3;
+
 }
 
 .sections{
@@ -78,8 +92,9 @@ width: 60%;
     8px 0 12px -8px rgba(0,0,0,0.15),   /* Derecha */
     0 8px 12px -4px rgba(0,0,0,0.2);     /* Abajo (ajustado para no subir) */
     margin-top: -224px;
-    height: 290px;
+    height: 380px;
     padding: 120px 20px 20px 50px ;
+    text-align: end;
 }
 
 .education{
@@ -88,7 +103,7 @@ width: 60%;
     -8px 0 12px -8px rgba(0,0,0,0.15),  /* Izquierda */
     8px 0 12px -8px rgba(0,0,0,0.15),   /* Derecha */
     0 8px 12px -4px rgba(0,0,0,0.2);     /* Abajo (ajustado para no subir) */
-    height: 120px;
+    height: 163px;
     padding: 30px;
     margin-top: 10px;
 }
@@ -136,8 +151,8 @@ width: 60%;
 
 }
 .imgg{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     border: 2px solid #0753a3;
 }
@@ -146,15 +161,15 @@ width: 60%;
 }
 
 .button{
+            width: 37px;
+            height: 37px;
             border: 1px solid rgb(255, 63, 63);
             border-radius: 20px; /* Para hacerlos redondeados */
-            padding: 8px 8px;
-            margin: 5px;
             background: none; /* Sin color de fondo */
-            color: inherit; /* Hereda el color del texto del padre */
-            cursor: pointer;
-            font-family: Arial, sans-serif;
             font-size: 14px;
+            position: relative;
+            top: 8px;
+            right: 30px;
 }
 .button:hover{
     transform: scale(1.15);
@@ -163,6 +178,8 @@ width: 60%;
     display: flex;
     align-items:center;
     gap: 20px;
+    font-size: 30px;
+    padding-top: 12px;
 }
 
 .tusconexiones{
@@ -176,14 +193,42 @@ width: 60%;
     0 8px 12px -4px rgba(0,0,0,0.2);     /* Abajo (ajustado para no subir) */
 }
 
+.textos{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
 .nombre{
+    margin-left: -10px;
     font-size: 40px;
-
-
+    margin-bottom: 10px;
 }
 .locacion{
-    margin-left: 10px;
-    font-size: 20px
+    margin-left: 1px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #5a5a5a;
+}
+.conocimientos{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: -40px;
+}
+
+.resumen{
+    font-size: 28px;
+    margin-top: 20px;
     
-    
+}
+
+.educationtext{
+    font-size: 30px
+}
+.textoeducation{
+    margin-top: 12px;
+    font-size: 22px
 }
