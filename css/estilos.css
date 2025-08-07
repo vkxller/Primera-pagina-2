@@ -55,49 +55,49 @@ a[href="#"]:hover {
     transform: translateY(-2px); /* Ligero movimiento hacia arriba */
 }
 
-.boton{
+.boton{ /*Edit Profile Boton*/
     font-size: 15px;
     width: 100px;
-    height: 40px;
-    position: relative;
-    top: 40px;
-    left: -940px;
+    height: 40px;   
+    display: flex;
+    justify-items: start;
+    margin-top: 50px;
 
 }
-.botton{
+.botton{ /*Cerrar sesion boton*/
     width: 100px;
     height: 40px;
 }
 
 .boton:hover{
-    color: #0753a3;
+    color: #0753a3; 
 
 }
 
-.sections{
+.sections{ /*Contenedor padre de todas las secciones y bloques exceptuando nav-*/
     align-items: center;
     padding: 20px 40px 10px 20px;
     display: flex;
     gap: 120px;
 }
 
-.info{
+.info{ /*Engloba los 2 bloques de la izquierda*/
 width: 60%;
 }  
 
-.main{  
+.main{  /*Contenedor principal almacena  las secciones exceptuando barra de navegacion*/
     border-radius: 0px 0px 20px 20px;           /*Aplicamos borde a bottom left y bottom rigth */
     box-shadow:                              /*Le aplicamos sombra al contenedor */
     -8px 0 12px -8px rgba(0,0,0,0.15),  /* Izquierda */
     8px 0 12px -8px rgba(0,0,0,0.15),   /* Derecha */
     0 8px 12px -4px rgba(0,0,0,0.2);     /* Abajo (ajustado para no subir) */
-    margin-top: -224px;
-    height: 380px;
-    padding: 120px 20px 20px 50px ;
+    margin-top: -174px;
+    height: 350px;
+    padding: 100px 40px 70px 50px ;
     text-align: end;
 }
 
-.education{
+.education{ /*Engloba  el contenedor de educacion*/
     border-radius: 20px;           /*Aplicamos borde a bottom left y bottom rigth */
     box-shadow:                              /*Le aplicamos sombra al contenedor */
     -8px 0 12px -8px rgba(0,0,0,0.15),  /* Izquierda */
@@ -108,18 +108,18 @@ width: 60%;
     margin-top: 10px;
 }
 
-.topcolor {
+.topcolor { /*Barra azul arriba de contenedor */
     position: relative;
     background-color: #0753a3;
     height: 120px;
     border-radius: 20px 20px 0px 0px; 
     z-index: 1;
 }   
-.circle{
+.circle{ /*Imagen circular de perfil*/
     padding: 0px; /* Quitamos padding y margin debido a que se hacia un espacio entre img y borde */
     margin: 0px;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 100%; /* Le damos forma a la imagen de un circulo perfecto*/
     border: 8px solid #0A2463; /* Agregamos border*/
     position: relative;
@@ -129,9 +129,9 @@ width: 60%;
 }
 
 
-.solicitudes{
+.solicitudes{ /*Contenedor de solicitudes*/
     padding: 15px;
-    height: 250px;
+    height: 350px;
     border-radius: 20px;           /*Aplicamos borde a bottom left y bottom rigth */
     box-shadow:                              /*Le aplicamos sombra al contenedor */
     -8px 0 12px -8px rgba(0,0,0,0.15),  /* Izquierda */
@@ -139,18 +139,18 @@ width: 60%;
     0 8px 12px -4px rgba(0,0,0,0.2);     /* Abajo (ajustado para no subir) */
 }
 
-.info2{
+.info2{ /*Contenedor completo de los 2 cuadros de la derecha*/
     width: 30%;
 }
 
-.img1{
+.img1{ /*Aplica los estilos a la imagen y nombre para alinearse*/
     justify-content: space-between;
     gap: 8px;
     display: flex;
     align-items: center;
 
 }
-.imgg{
+.imgg{ /*Imagen de usuarios*/
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -160,7 +160,8 @@ width: 60%;
     transform: scale(1.3);
 }
 
-.button{
+.button{      /*Boton cerrar sesion*/   
+            margin-right: 15px;
             width: 37px;
             height: 37px;
             border: 1px solid rgb(255, 63, 63);
@@ -174,7 +175,7 @@ width: 60%;
 .button:hover{
     transform: scale(1.15);
 }
-.englobao{
+.user{ /*Imagen y nombre de usuario*/
     display: flex;
     align-items:center;
     gap: 20px;
@@ -182,18 +183,19 @@ width: 60%;
     padding-top: 12px;
 }
 
-.tusconexiones{
+.tusconexiones{ /*Caja tus secciones*/
     margin-top: 30px;
     padding: 15px;
-    height: 420px;
+    height: 430px;
     border-radius: 20px;           /*Aplicamos borde a bottom left y bottom rigth */
     box-shadow:                              /*Le aplicamos sombra al contenedor */
     -8px 0 12px -8px rgba(0,0,0,0.15),  /* Izquierda */
     8px 0 12px -8px rgba(0,0,0,0.15),   /* Derecha */
     0 8px 12px -4px rgba(0,0,0,0.2);     /* Abajo (ajustado para no subir) */
+    
 }
 
-.textos{
+.textos{ /*Contiene todos los textos, nombre, locacion, conocimientos y resumen*/
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -201,34 +203,44 @@ width: 60%;
 
 
 
-.nombre{
+.nombre{ /*Nombre de persona */
     margin-left: -10px;
     font-size: 40px;
     margin-bottom: 10px;
 }
-.locacion{
+.locacion{ /*Locacion*/
     margin-left: 1px;
     font-size: 30px;
     margin-bottom: 50px;
     color: #5a5a5a;
 }
-.conocimientos{
+.conocimientos{ /*Conocimientos*/
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: -40px;
 }
 
-.resumen{
+.resumen{ /*Resumen de persona*/
     font-size: 28px;
     margin-top: 20px;
     
 }
 
-.educationtext{
+.educationtext{ /*Titulo educacion*/
     font-size: 30px
 }
-.textoeducation{
+.resumeneducation{ /*Resumn de educacion*/
     margin-top: 12px;
     font-size: 22px
 }
+
+li{ /*Espaciado entre cada lista*/
+    margin-top: 20px;
+}
+
+h2{ /*Estilo para subtitulos de seccion*/
+    margin-top: 5px;
+    text-align: center;
+}
+
